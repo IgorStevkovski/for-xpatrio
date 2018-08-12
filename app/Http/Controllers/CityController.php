@@ -24,6 +24,11 @@ class CityController extends Controller
     public function __construct(){
         $this->middleware('auth');
     }
+
+    public function skopje(){
+        echo 'skopje';
+    }
+
     public function belgrade()
     {
         //$grad=$city;

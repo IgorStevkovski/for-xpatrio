@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('auth/login');
 });
-
+Route::get('city/skopje','CityController@skopje');
 Route::get('city/belgrade','CityController@belgrade');
 Route::post('city/belgrade','CityController@belgradeCreatePost');
 Route::get('city/belgrade/createComment','CityController@belgradeShowComment');
